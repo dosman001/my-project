@@ -23,8 +23,8 @@ jobs:
         
 
 
-    - name: Setup Gradle
-      run: chmod + gradlew
+    - name: grant permission for gradle
+      run: chmod +w gradlew
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
